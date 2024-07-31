@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Commands\Definitions\Appellation\Delete\" />
+    <Folder Include="Features\Commands\Definitions\Appellation\Update\" />
+    <Folder Include="Features\Commands\Definitions\EntryExitManagement\Delete\" />
+    <Folder Include="Features\Commands\Definitions\EntryExitManagement\Update\" />
+    <Folder Include="Features\Commands\Definitions\LeaveType\Delete\" />
+    <Folder Include="Features\Commands\Definitions\LeaveType\Update\" />
+    <Folder Include="Features\Commands\Definitions\Leave\Delete\" />
+    <Folder Include="Features\Commands\Definitions\Leave\Update\" />
+    <Folder Include="Features\Commands\Definitions\Recruitment\Job\Create\" />
+    <Folder Include="Features\Commands\Definitions\Recruitment\Job\Delete\" />
+    <Folder Include="Features\Commands\Definitions\Recruitment\Job\Update\" />
+    <Folder Include="Features\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\GCodeUtiltyLibrary\Utilities\Utilities.csproj" />
+    <ProjectReference Include="..\GHR.Domain\GHR.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
